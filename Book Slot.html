@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Slot</title>
+    </head>
+    <body>
+        <div>
+            <form action="">
+                <article>
+                    <h2>1. Your Contact Details</h2>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="text" name="patientID" placeholder="Patient ID if exists"><br>
+                    <input type="number" name="contact_number" pattern="\d{10}" placeholder="Contact Number" required>
+                    <input type="text" name="email_id" placeholder="Enter Email ID" required><br>
+                </article>
+
+                <article>
+                    <h2>2. Address</h2>
+                    <input type="text" name="houseNo" placeholder="H-No" required>
+                    <input type="text" name="street" placeholder="Street" required><br>
+                    <input type="text" name="area" placeholder="Area" requires><br>
+                    <h3>District</h3>
+                    <select name="District" id="district" required>
+                        <option value="">Choose</option>
+                        <option value="Bangalore Urban">Bangalore Urban</option>
+                        <option value="Bangalore Rural">Bangalore Rural</option>
+                        <option value="Ramnagar">Ramnagar</option>
+                    </select><br>
+                </article>
+
+                <article>
+                    <h2>3. Lab Test Details</h2>
+                    <select name="testtype" id="testType" required>
+                        <option value="cbc">CBC</option>
+                        <option value="compUrine">Complete Urine</option>
+                        <option value="lipid">Lipid Profile</option>
+                        <option value="tsh">Thyroid Stimulating Hormone(TSH)</option>
+                        <option value="glucose">Glucose Test</option>
+                    </select><br>
+                </article>
+
+                <article>
+                    <h3>Do you want a hard copy of the report?</h3>
+                    <input type="radio" id="c1" name="option" value="yes" required>
+                    <label for="c5">Yes</label><br>
+                    <input type="radio" id="c2" name="option" value="no" required>
+                    <label for="c5">No</label><br>
+                </article>
+
+                <article>
+                    <h3>Select comfortable date and time</h3>
+                    <label for="c3">Date: </label>
+                    <input type="date" required><br>
+                    <label for="c4">Time:</label>
+                    <input type="time" required><br>
+                </article>
+
+                <button form="lab-form">Reset</button>
+                <button form="lab-form">Submit</button>
+            </form>
+        </div>
+
+        
+    </body>
+</html>
